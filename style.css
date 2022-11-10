@@ -56,20 +56,20 @@ nav {
 
   .navbar {
     padding-left: 20px;
-    background-color: #fff;
   }
 }
 
 /* intro area */
 .intro-second-body {
-  margin-top: 150px;
+  margin-top: 250px;
   display: flex;
   justify-content: center;
 }
 
 .intro-body {
   padding-bottom: 150px;
-  background-image: url(image/header-background-shape-desktop.png);
+  background-image: url(image/Header-bg.png);
+  border: 1px solid #fff;
 }
 
 .intro {
@@ -123,9 +123,22 @@ nav {
 }
 
 @media (max-width: 500px) {
+  .navbar {
+    margin-bottom: 200px;
+  }
+
   .intro {
     width: 320px;
     box-sizing: border-box;
+    margin-top: -100px;
+  }
+
+  .intro-body {
+    background-image: url(image/header-shapesomobile.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    width: 410px;
   }
 
   .intro-para {
@@ -574,6 +587,7 @@ nav {
   padding-bottom: 100px;
   background-color: #6070ff;
   border-radius: 100px 0 0 0;
+  background-image: url(image/contact-form-background-shapes.png);
 }
 
 .contact-container .contact-me {
@@ -626,6 +640,10 @@ nav {
 }
 
 @media (max-width: 500px) {
+  .contact-container {
+    background-image: url(image/contact-form-shapes.png);
+  }
+
   .contact-me div {
     display: flex;
     justify-content: center;
