@@ -206,11 +206,11 @@ nav {
   transition: all 1s;
 }
 
-.content button a:hover {
+.content .btn3 a {
   color: #fff;
 }
 
-.content .btn3 a {
+.content button a:hover {
   color: #fff;
 }
 
@@ -546,7 +546,7 @@ nav {
   }
 
   .about-myself .about-side .icon-list {
-   display: inline;
+    display: inline;
   }
 
   .about-myself .about-side .icon-list li {
