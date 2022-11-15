@@ -178,13 +178,13 @@ nav {
   transition: 1s;
 }
 
+.section-even .image {
+  transition: 1s;
+}
+
 .section-odd .image:hover {
   transform: scale(1.1);
   z-index: 2;
-}
-
-.section-even .image {
-  transition: 1s;
 }
 
 .section-even .image:hover {
@@ -308,16 +308,16 @@ nav {
   .section-odd .image {
     transition: 1s;
   }
-  
+
+  .section-even .image {
+    transition: 1s;
+  }
+
   .section-odd .image:hover {
     transform: scale(1.1);
     z-index: 2;
   }
-  
-  .section-even .image {
-    transition: 1s;
-  }
-  
+
   .section-even .image:hover {
     transform: scale(1.1);
     z-index: 2;
