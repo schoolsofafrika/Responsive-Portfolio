@@ -174,6 +174,24 @@ nav {
   border-radius: 10px;
 }
 
+.section-odd .image {
+  transition: 1s;
+}
+
+.section-even .image {
+  transition: 1s;
+}
+
+.section-odd .image:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.section-even .image:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
 .section-odd .content {
   padding: 20px;
 }
@@ -285,6 +303,24 @@ nav {
   .section-odd .content {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .section-odd .image {
+    transition: 1s;
+  }
+
+  .section-even .image {
+    transition: 1s;
+  }
+
+  .section-odd .image:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  .section-even .image:hover {
+    transform: scale(1.1);
+    z-index: 2;
   }
 }
 
@@ -686,4 +722,8 @@ nav {
     width: 327px;
     display: inline;
   }
+}
+
+.row {
+  text-align: center;
 }
