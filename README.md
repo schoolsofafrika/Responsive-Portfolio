@@ -8,7 +8,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://schoolsofafrika.github.io/Responsive-Portfolio/)
 
 
 ## Getting Started
@@ -28,14 +28,16 @@ Open the index file and enjoy
 
 
 
-
-
 👤 **Author1**
-
 
 - GitHub: [@githubhandle]()
 - Twitter: [@twitterhandle](https://twitter.com/SchoolsAfrikana)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/okonkwo-echezona-4b92181b0/)
+
+**Author2**
+- GitHub: [@githubhandle]()
+- Twitter: [@twitterhandle](https://twitter.com/thinus_v_d_v)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/thinus-van-de-venter-99aa26203/)
 
 
 ## 🤝 Contributing
