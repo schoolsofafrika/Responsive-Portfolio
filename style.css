@@ -723,3 +723,7 @@ nav {
     display: inline;
   }
 }
+
+.row {
+  text-align: center;
+}
