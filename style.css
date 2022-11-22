@@ -50,16 +50,35 @@ nav {
   height: 21px;
 }
 
+.close {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .menu-button {
     display: flex;
+  }
+
+  .close-button {
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .close {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: flex-end;
+    padding: 25px;
   }
 
   .navbar-links {
     display: none;
     width: 105%;
     background: #6070ff;
-    mix-blend-mode: multiply;
     height: 100vh;
     margin-left: -20px;
   }
@@ -76,8 +95,8 @@ nav {
   }
 
   .navbar-links li {
-    text-align: center;
     padding-top: 50px;
+    top: 70px;
   }
 
   .navbar-links li a {
