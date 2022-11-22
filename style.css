@@ -20,7 +20,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 0 50px;
+  padding: 20px 0 50px 50px;
 }
 
 .logo {
@@ -43,6 +43,11 @@ nav {
   position: absolute;
   right: 1rem;
   display: none;
+  top: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
 @media (max-width: 500px) {
@@ -52,15 +57,164 @@ nav {
 
   .navbar-links {
     display: none;
+    width: 100%;
   }
 
   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 20px;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    color: #396df2;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
 
 /* intro area */
-.intro-second-body {
+.nav-body {
+  padding-top: 250px;
+  padding-bottom: 200px;
+  background-image: url(image/Header-bg.png);
+  background-color: #fff;
+}
+
+.nav-second-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-second-body h2 {
+  width: 920px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091e42;
+}
+
+.nav-para {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-para p {
+  width: 920px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.connect h3 {
+  width: 920px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul {
+  width: 920px;
+  display: flex;
+}
+
+.icons ul li {
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .nav-body {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(image/header-shapes-mobile.png);
+    background-repeat: no-repeat;
+  }
+
+  .nav-second-body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-second-body h2 {
+    width: 327px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  .nav-para {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-para p {
+    width: 327px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .connect {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .connect h3 {
+    width: 327px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons ul {
+    width: 327px;
+    display: flex;
+  }
+
+  .icons ul li {
+    margin-right: 20px;
+  }
+}
+
+/* .intro-second-body {
   margin-top: 250px;
   display: flex;
   justify-content: center;
@@ -155,7 +309,7 @@ nav {
     width: 320px;
     box-sizing: border-box;
   }
-}
+} */
 
 /* This is the section area */
 
@@ -306,10 +460,6 @@ nav {
   }
 
   .section-odd .image {
-    transition: 1s;
-  }
-
-  .section-even .image {
     transition: 1s;
   }
 
