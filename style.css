@@ -58,7 +58,7 @@ nav {
   .navbar-links {
     display: none;
     width: 105%;
-    background: #6070FF;
+    background: #6070ff;
     mix-blend-mode: multiply;
     height: 100vh;
     margin-left: -20px;
@@ -92,7 +92,6 @@ nav {
     display: flex;
   }
 }
-
 
 /* intro area */
 .nav-body {
