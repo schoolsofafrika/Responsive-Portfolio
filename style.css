@@ -78,7 +78,7 @@ nav {
   .navbar-links {
     display: none;
     width: 105%;
-    background: rgba(96, 112, 255,.5);
+    background: rgba(96, 112, 255, 0.5);
     height: 100vh;
     margin-left: -20px;
   }
