@@ -60,8 +60,8 @@ nav {
   }
 
   .close-button {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     left: 5px;
     top: 5px;
   }
@@ -78,7 +78,7 @@ nav {
   .navbar-links {
     display: none;
     width: 105%;
-    background: #6070ff;
+    background: rgba(96, 112, 255,.5);
     height: 100vh;
     margin-left: -20px;
   }
