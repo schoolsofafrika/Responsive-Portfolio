@@ -55,7 +55,61 @@ nav {
 }
 
 @media (max-width: 500px) {
-  /*  */
+  .menu-button {
+    display: flex;
+  }
+
+  .close-button {
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .close {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: flex-end;
+    padding: 25px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 105%;
+    background: #6070ff;
+    height: 100vh;
+    margin-left: -20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    padding-top: 50px;
+    top: 70px;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
 /* intro area */
