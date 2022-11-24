@@ -23,6 +23,10 @@ nav {
   padding: 20px 0 50px 50px;
 }
 
+.navbar-links {
+  display: none;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -76,11 +80,14 @@ nav {
   }
 
   .navbar-links {
+    position: fixed;
     display: none;
     width: 105%;
-    background: rgba(96, 112, 255, 0.5);
+    background: rgba(96, 112, 255, 0.8);
     height: 100vh;
     margin-left: -20px;
+    z-index: 1;
+    padding-left: 30px;
   }
 
   .navbar {
