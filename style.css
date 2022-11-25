@@ -20,7 +20,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 0 50px;
+  padding: 20px 0 50px 50px;
+}
+
+.navbar-links {
+  display: none;
 }
 
 .logo {
@@ -43,6 +47,15 @@ nav {
   position: absolute;
   right: 1rem;
   display: none;
+  top: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.close {
+  display: none;
 }
 
 @media (max-width: 500px) {
@@ -50,17 +63,192 @@ nav {
     display: flex;
   }
 
+  .close-button {
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .close {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: flex-end;
+    padding: 25px;
+  }
+
   .navbar-links {
+    position: fixed;
     display: none;
+    width: 105%;
+    background: rgba(96, 112, 255, 0.8);
+    height: 100vh;
+    margin-left: -20px;
+    z-index: 1;
+    padding-left: 30px;
   }
 
   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 20px;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    padding-top: 50px;
+    top: 70px;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
 
 /* intro area */
-.intro-second-body {
+.nav-body {
+  padding-top: 250px;
+  padding-bottom: 200px;
+  background-image: url(image/Header-bg.png);
+  background-color: #fff;
+}
+
+.nav-second-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-second-body h2 {
+  width: 920px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091e42;
+}
+
+.nav-para {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-para p {
+  width: 920px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.connect h3 {
+  width: 920px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul {
+  width: 920px;
+  display: flex;
+}
+
+.icons ul li {
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .nav-body {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(image/header-shapes-mobile.png);
+    background-repeat: no-repeat;
+  }
+
+  .nav-second-body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-second-body h2 {
+    width: 327px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  .nav-para {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-para p {
+    width: 327px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .connect {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .connect h3 {
+    width: 327px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons ul {
+    width: 327px;
+    display: flex;
+  }
+
+  .icons ul li {
+    margin-right: 20px;
+  }
+}
+
+/* .intro-second-body {
   margin-top: 250px;
   display: flex;
   justify-content: center;
@@ -155,7 +343,7 @@ nav {
     width: 320px;
     box-sizing: border-box;
   }
-}
+} */
 
 /* This is the section area */
 
@@ -172,6 +360,24 @@ nav {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.section-odd .image {
+  transition: 1s;
+}
+
+.section-even .image {
+  transition: 1s;
+}
+
+.section-odd .image:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.section-even .image:hover {
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 .section-odd .content {
@@ -285,6 +491,20 @@ nav {
   .section-odd .content {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .section-odd .image {
+    transition: 1s;
+  }
+
+  .section-odd .image:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  .section-even .image:hover {
+    transform: scale(1.1);
+    z-index: 2;
   }
 }
 
@@ -686,4 +906,8 @@ nav {
     width: 327px;
     display: inline;
   }
+}
+
+.row {
+  text-align: center;
 }
